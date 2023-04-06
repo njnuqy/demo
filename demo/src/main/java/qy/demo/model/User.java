@@ -1,16 +1,16 @@
 package qy.demo.model;
 
 public class User {
-    private String id;
-    private String name;
+    private Long id;
+    private String userName;
     private String password;
 
     public String getName() {
-        return name;
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -21,11 +21,11 @@ public class User {
         this.password = password;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 }

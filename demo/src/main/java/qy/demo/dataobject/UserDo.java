@@ -1,5 +1,7 @@
 package qy.demo.dataobject;
 
+import qy.demo.model.User;
+
 public class UserDo {
     private Long id;
     private String userName;
@@ -27,5 +29,13 @@ public class UserDo {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public User toModel() {
+        User user = new User();
+        user.setId(getId());
+        user.setName(getUserName());
+        user.setPassword(password);
+        return user;
     }
 }
